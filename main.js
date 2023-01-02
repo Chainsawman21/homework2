@@ -84,22 +84,23 @@
 
 // 1 вариант
 
-var marley = +prompt('Ввести свой возраст');
+var time = +prompt('Введите свой возраст в цифрах');
 
-if(marley < 18) {
-    alert('Вы ещё молоды вам надо учиться');
-}else if(marley > 18 && marley < 50) {
-    alert('Вам нужно работать')
-}else if(marley > 50 && marley < 59) {
-    alert('Вам скоро на пенсию')
-}else if(marley > 59 && marley < 100) {
-    alert('Вы песионер')
-}else(marley > 100) 
-    alert('Что-то пошло не так')
+if(time > 0 && time < 18 || time == 18) {
+    alert ('Вам нужно учиться');
+}else if(time > 18 && time < 50 || time == 50) {
+    alert ('Вам нужно работать');
+}else if(time > 50 && time < 59 || time == 59) {
+    alert('Вам скоро на пенсию');
+}else if(time > 59 && time < 100 || time == 100) {
+    alert ('Вы пенсионер');
+}else {
+    alert ('Что то пошло не так');
+}
 
 
 
- // 2 вариант   
+ // 1 вариант   
 
  var watch = +prompt ('Вести время в цифрах');
 
@@ -179,7 +180,7 @@ if(marley < 18) {
 }
 
 
-// 3 вариант
+// 2 вариант
 
 
 var mikasa2 = +prompt('Введите первое число'); 
